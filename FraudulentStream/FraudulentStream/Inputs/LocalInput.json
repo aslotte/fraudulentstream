@@ -1,0 +1,11 @@
+﻿{
+  "InputAlias": "input",
+  "Type": "Data Stream",
+  "Format": "Json",
+  "FilePath": "..\\input.json",
+  "SerializationDllPath": null,
+  "SerializationClassName": null,
+  "SerializationDllPathInLocal": null,
+  "Sample": "{\r\n  \"Step\": 1,\r\n  \"Type\": \"PAYMENT\",\r\n  \"Amount\": 4833.96,\r\n  \"NameOrig\": \"C1060042118\",\r\n  \"OldBalanceOrg\": 41005,\r\n  \"NewBalanceOrig\": 36171.04,\r\n  \"NameDest\": \"M1964847681\",\r\n  \"OldBalanceDest\": 0,\r\n  \"NewBalanceDest\": 0,\r\n  \"EventProcessedUtcTime\": \"2020-03-16T21:36:31.9415576Z\",\r\n  \"PartitionId\": 0,\r\n  \"EventEnqueuedUtcTime\": \"2020-03-16T21:33:28.0140000Z\"\r\n}",
+  "ScriptType": "InputMock"
+}

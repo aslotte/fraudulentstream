@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MLModel.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="MLModel.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.ML.Core">
+      <HintPath>..\..\..\..\.nuget\packages\microsoft.ml\1.5.0-preview\lib\netstandard2.0\Microsoft.ML.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.Data">
+      <HintPath>..\..\..\..\.nuget\packages\microsoft.ml\1.5.0-preview\lib\netstandard2.0\Microsoft.ML.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.DataView">
+      <HintPath>..\..\..\..\.nuget\packages\microsoft.ml.dataview\1.5.0-preview\lib\netstandard2.0\Microsoft.ML.DataView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ML.FastTree">
+      <HintPath>..\..\..\..\.nuget\packages\microsoft.ml.fasttree\1.5.0-preview\lib\netstandard2.0\Microsoft.ML.FastTree.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

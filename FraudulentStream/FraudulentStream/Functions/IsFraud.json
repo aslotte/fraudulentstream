@@ -1,0 +1,40 @@
+﻿{
+  "AssemblyName": "FraudPredictor",
+  "ClassName": "FraudPredictor.FraudPredictor",
+  "MethodName": "Predict",
+  "LibraryPathInLocal": "..\\..\\FraudPredictor\\bin\\Debug\\netstandard2.0\\FraudPredictor.dll",
+  "Name": "IsFraud",
+  "OutputType": "any",
+  "Type": "Scalar",
+  "FunctionInputs": [
+    {
+      "DataType": "nvarchar(max)",
+      "IsConfigurationParameter": null
+    },
+    {
+      "DataType": "nvarchar(max)",
+      "IsConfigurationParameter": null
+    },
+    {
+      "DataType": "float",
+      "IsConfigurationParameter": null
+    },
+    {
+      "DataType": "float",
+      "IsConfigurationParameter": null
+    },
+    {
+      "DataType": "float",
+      "IsConfigurationParameter": null
+    },
+    {
+      "DataType": "float",
+      "IsConfigurationParameter": null
+    },
+    {
+      "DataType": "float",
+      "IsConfigurationParameter": null
+    }
+  ],
+  "ScriptType": "CSharpFunction"
+}

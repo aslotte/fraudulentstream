@@ -1,0 +1,57 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d6643458-744d-48c9-8ca7-d302e9bb1db7</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>FraudulentStream</AssemblyName>
+    <StartFile>Script.asaql</StartFile>
+    <ASATargetsFilePath>$(AppData)\Microsoft\DataLake\MsBuild\1.0\StreamAnalytics.targets</ASATargetsFilePath>
+    <Name>FraudulentStream</Name>
+    <RootNamespace>FraudulentStream</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Script Include="Script.asaql" />
+    <ScriptCode Include="Script.asaql.cs">
+      <DependentUpon>Script.asaql</DependentUpon>
+    </ScriptCode>
+  </ItemGroup>
+  <ItemGroup>
+    <Configure Include="Functions\IsFraud.json">
+      <SubType>CSharpFunction</SubType>
+    </Configure>
+    <Configure Include="Inputs\Input.json">
+      <SubType>Input</SubType>
+    </Configure>
+    <Configure Include="Inputs\LocalInput.json">
+      <SubType>InputMock</SubType>
+    </Configure>
+    <Configure Include="Outputs\Output.json">
+      <SubType>Output</SubType>
+    </Configure>
+    <Configure Include="JobConfig.json">
+      <SubType>JobConfig</SubType>
+    </Configure>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Inputs" />
+    <Folder Include="Functions" />
+    <Folder Include="Outputs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FraudPredictor\FraudPredictor.csproj">
+      <Name>FraudPredictor</Name>
+      <Project>{89ef3523-8e7e-4271-b6bf-c7c3737db326}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(ASATargetsFilePath)" />
+</Project>
