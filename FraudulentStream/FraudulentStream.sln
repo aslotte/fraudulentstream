@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E6C563F2-BDC2-4A24-ACBF-01715157DCBB}") = "FraudulentStream", "FraudulentStream\FraudulentStream.asaproj", "{D6643458-744D-48C9-8CA7-D302E9BB1DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudPredictor", "FraudPredictor\FraudPredictor.csproj", "{89EF3523-8E7E-4271-B6BF-C7C3737DB326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FraudPredictor", "FraudPredictor\FraudPredictor.csproj", "{89EF3523-8E7E-4271-B6BF-C7C3737DB326}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FraudPredictorUDF", "FraudPredictorUDF\FraudPredictorUDF.csproj", "{CF1D0C3A-69B4-4CE1-A88D-FA1CDFC01D87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{89EF3523-8E7E-4271-B6BF-C7C3737DB326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89EF3523-8E7E-4271-B6BF-C7C3737DB326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89EF3523-8E7E-4271-B6BF-C7C3737DB326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1D0C3A-69B4-4CE1-A88D-FA1CDFC01D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1D0C3A-69B4-4CE1-A88D-FA1CDFC01D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1D0C3A-69B4-4CE1-A88D-FA1CDFC01D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1D0C3A-69B4-4CE1-A88D-FA1CDFC01D87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

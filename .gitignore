@@ -3,3 +3,9 @@ FraudulentStream/.vs/FraudulentStream/DesignTimeBuild/.dtbcache
 FraudulentStream/.vs/FraudulentStream/v16/.suo
 FraudulentStream/.vs/FraudulentStream/v16/Server/sqlite3/db.lock
 FraudulentStream/.vs/FraudulentStream/v16/Server/sqlite3/storage.ide
+FraudulentStream/.vs/FraudulentStream/v16/Server/sqlite3/storage.ide-shm
+FraudulentStream/.vs/FraudulentStream/v16/Server/sqlite3/storage.ide-wal
+FraudulentStream/FraudPredictor/obj/Debug/netstandard2.0/FraudPredictor.AssemblyInfo.cs
+FraudulentStream/FraudPredictor/obj/Debug/netstandard2.0/FraudPredictor.AssemblyInfoInputs.cache
+FraudulentStream/FraudPredictorUDF/obj/Debug/netstandard2.0/FraudPredictorUDF.AssemblyInfo.cs
+FraudulentStream/FraudPredictorUDF/obj/Debug/netstandard2.0/FraudPredictorUDF.AssemblyInfoInputs.cache

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <Import Project="Microsoft.Azure.StreamAnalytics.targets" Condition="Exists('Microsoft.Azure.StreamAnalytics.targets')" />
+  <ItemGroup>
+    <None Remove="MLModel.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MLModel.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.5.0-preview2" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.5.0-preview2" />
+  </ItemGroup>
+</Project>

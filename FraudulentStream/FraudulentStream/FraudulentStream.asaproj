@@ -47,6 +47,11 @@
     <Folder Include="Outputs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FraudPredictorUDF\FraudPredictorUDF.csproj">
+      <Name>FraudPredictorUDF</Name>
+      <Project>{cf1d0c3a-69b4-4ce1-a88d-fa1cdfc01d87}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\FraudPredictor\FraudPredictor.csproj">
       <Name>FraudPredictor</Name>
       <Project>{89ef3523-8e7e-4271-b6bf-c7c3737db326}</Project>

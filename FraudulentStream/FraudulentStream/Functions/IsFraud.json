@@ -1,8 +1,8 @@
 ﻿{
-  "AssemblyName": "FraudPredictor",
+  "AssemblyName": "FraudPredictorUDF",
   "ClassName": "FraudPredictor.FraudPredictor",
   "MethodName": "Predict",
-  "LibraryPathInLocal": "..\\..\\FraudPredictor\\bin\\Debug\\netstandard2.0\\FraudPredictor.dll",
+  "LibraryPathInLocal": "..\\..\\FraudPredictorUDF\\bin\\Debug\\netstandard2.0\\FraudPredictorUDF.dll",
   "Name": "IsFraud",
   "OutputType": "any",
   "Type": "Scalar",
